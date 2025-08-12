@@ -1,0 +1,155 @@
+<<<<<<< HEAD
+# Project: Koala Engine
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Obj/main.o Obj/AlphaBet.o Obj/Attacks.o Obj/Board.o Obj/BoardUtils.o Obj/MakeMove.o Obj/MoveGen.o Obj/dismantling.o Obj/Listener.o Obj/Response.o Obj/SpecialMoves.o Obj/Eyes.o Obj/ChunkFeatureExtractor.o Obj/ChunkMaskGenerator.o Obj/ChunkEvaluator.o Obj/StrategicGrids.o Obj/build_chunks.o
+LINKOBJ  = Obj/main.o Obj/AlphaBet.o Obj/Attacks.o Obj/Board.o Obj/BoardUtils.o Obj/MakeMove.o Obj/MoveGen.o Obj/dismantling.o Obj/Listener.o Obj/Response.o Obj/SpecialMoves.o Obj/Eyes.o Obj/ChunkFeatureExtractor.o Obj/ChunkMaskGenerator.o Obj/ChunkEvaluator.o Obj/StrategicGrids.o Obj/build_chunks.o
+LIBS     = -L"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib32" -static-libgcc ../Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include/sys/stat.h -m32
+INCS     = -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/Franciszek/Desktop/Koala Engine Two Generation/Source/conAnHea"
+CXXINCS  = -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"C:/Users/Franciszek/Desktop/Koala Engine Two Generation/Source/conAnHea"
+BIN      = "Koala Engine.exe"
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+DEL      = C:\Users\Franciszek\Desktop\Programs\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Obj/main.o: main.cpp
+	$(CPP) -c main.cpp -o Obj/main.o $(CXXFLAGS)
+
+Obj/AlphaBet.o: Source/source/AlphaBet.cpp
+	$(CPP) -c Source/source/AlphaBet.cpp -o Obj/AlphaBet.o $(CXXFLAGS)
+
+Obj/Attacks.o: Source/source/Attacks.cpp
+	$(CPP) -c Source/source/Attacks.cpp -o Obj/Attacks.o $(CXXFLAGS)
+
+Obj/Board.o: Source/source/Board.cpp
+	$(CPP) -c Source/source/Board.cpp -o Obj/Board.o $(CXXFLAGS)
+
+Obj/BoardUtils.o: Source/source/BoardUtils.cpp
+	$(CPP) -c Source/source/BoardUtils.cpp -o Obj/BoardUtils.o $(CXXFLAGS)
+
+Obj/MakeMove.o: Source/source/MakeMove.cpp
+	$(CPP) -c Source/source/MakeMove.cpp -o Obj/MakeMove.o $(CXXFLAGS)
+
+Obj/MoveGen.o: Source/source/MoveGen.cpp
+	$(CPP) -c Source/source/MoveGen.cpp -o Obj/MoveGen.o $(CXXFLAGS)
+
+Obj/dismantling.o: Source/source/UCI/dismantling.cpp
+	$(CPP) -c Source/source/UCI/dismantling.cpp -o Obj/dismantling.o $(CXXFLAGS)
+
+Obj/Listener.o: Source/source/UCI/Listener.cpp
+	$(CPP) -c Source/source/UCI/Listener.cpp -o Obj/Listener.o $(CXXFLAGS)
+
+Obj/Response.o: Source/source/UCI/Response.cpp
+	$(CPP) -c Source/source/UCI/Response.cpp -o Obj/Response.o $(CXXFLAGS)
+
+Obj/SpecialMoves.o: Source/source/SpecialMoves.cpp
+	$(CPP) -c Source/source/SpecialMoves.cpp -o Obj/SpecialMoves.o $(CXXFLAGS)
+
+Obj/Eyes.o: Source/source/Eyes.cpp
+	$(CPP) -c Source/source/Eyes.cpp -o Obj/Eyes.o $(CXXFLAGS)
+
+Obj/ChunkFeatureExtractor.o: Source/source/ChunkFeatureExtractor.cpp
+	$(CPP) -c Source/source/ChunkFeatureExtractor.cpp -o Obj/ChunkFeatureExtractor.o $(CXXFLAGS)
+
+Obj/ChunkMaskGenerator.o: Source/source/ChunkMaskGenerator.cpp
+	$(CPP) -c Source/source/ChunkMaskGenerator.cpp -o Obj/ChunkMaskGenerator.o $(CXXFLAGS)
+
+Obj/ChunkEvaluator.o: Source/source/ChunkEvaluator.cpp
+	$(CPP) -c Source/source/ChunkEvaluator.cpp -o Obj/ChunkEvaluator.o $(CXXFLAGS)
+
+Obj/StrategicGrids.o: Source/source/StrategicGrids.cpp
+	$(CPP) -c Source/source/StrategicGrids.cpp -o Obj/StrategicGrids.o $(CXXFLAGS)
+
+Obj/build_chunks.o: Source/source/build_chunks.cpp
+	$(CPP) -c Source/source/build_chunks.cpp -o Obj/build_chunks.o $(CXXFLAGS)
+=======
+# Project: Koala Engine
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Obj/main.o Obj/AlphaBet.o Obj/Attacks.o Obj/Board.o Obj/BoardUtils.o Obj/MakeMove.o Obj/MoveGen.o Obj/dismantling.o Obj/Listener.o Obj/Response.o Obj/SpecialMoves.o Obj/Eyes.o Obj/ChunkFeatureExtractor.o Obj/ChunkMaskGenerator.o Obj/ChunkEvaluator.o Obj/StrategicGrids.o Obj/build_chunks.o
+LINKOBJ  = Obj/main.o Obj/AlphaBet.o Obj/Attacks.o Obj/Board.o Obj/BoardUtils.o Obj/MakeMove.o Obj/MoveGen.o Obj/dismantling.o Obj/Listener.o Obj/Response.o Obj/SpecialMoves.o Obj/Eyes.o Obj/ChunkFeatureExtractor.o Obj/ChunkMaskGenerator.o Obj/ChunkEvaluator.o Obj/StrategicGrids.o Obj/build_chunks.o
+LIBS     = -L"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib32" -static-libgcc ../Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include/sys/stat.h -m32
+INCS     = -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/Franciszek/Desktop/Koala Engine Two Generation/Source/conAnHea"
+CXXINCS  = -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/Franciszek/Desktop/Programs/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"C:/Users/Franciszek/Desktop/Koala Engine Two Generation/Source/conAnHea"
+BIN      = "Koala Engine.exe"
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+DEL      = C:\Users\Franciszek\Desktop\Programs\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Obj/main.o: main.cpp
+	$(CPP) -c main.cpp -o Obj/main.o $(CXXFLAGS)
+
+Obj/AlphaBet.o: Source/source/AlphaBet.cpp
+	$(CPP) -c Source/source/AlphaBet.cpp -o Obj/AlphaBet.o $(CXXFLAGS)
+
+Obj/Attacks.o: Source/source/Attacks.cpp
+	$(CPP) -c Source/source/Attacks.cpp -o Obj/Attacks.o $(CXXFLAGS)
+
+Obj/Board.o: Source/source/Board.cpp
+	$(CPP) -c Source/source/Board.cpp -o Obj/Board.o $(CXXFLAGS)
+
+Obj/BoardUtils.o: Source/source/BoardUtils.cpp
+	$(CPP) -c Source/source/BoardUtils.cpp -o Obj/BoardUtils.o $(CXXFLAGS)
+
+Obj/MakeMove.o: Source/source/MakeMove.cpp
+	$(CPP) -c Source/source/MakeMove.cpp -o Obj/MakeMove.o $(CXXFLAGS)
+
+Obj/MoveGen.o: Source/source/MoveGen.cpp
+	$(CPP) -c Source/source/MoveGen.cpp -o Obj/MoveGen.o $(CXXFLAGS)
+
+Obj/dismantling.o: Source/source/UCI/dismantling.cpp
+	$(CPP) -c Source/source/UCI/dismantling.cpp -o Obj/dismantling.o $(CXXFLAGS)
+
+Obj/Listener.o: Source/source/UCI/Listener.cpp
+	$(CPP) -c Source/source/UCI/Listener.cpp -o Obj/Listener.o $(CXXFLAGS)
+
+Obj/Response.o: Source/source/UCI/Response.cpp
+	$(CPP) -c Source/source/UCI/Response.cpp -o Obj/Response.o $(CXXFLAGS)
+
+Obj/SpecialMoves.o: Source/source/SpecialMoves.cpp
+	$(CPP) -c Source/source/SpecialMoves.cpp -o Obj/SpecialMoves.o $(CXXFLAGS)
+
+Obj/Eyes.o: Source/source/Eyes.cpp
+	$(CPP) -c Source/source/Eyes.cpp -o Obj/Eyes.o $(CXXFLAGS)
+
+Obj/ChunkFeatureExtractor.o: Source/source/ChunkFeatureExtractor.cpp
+	$(CPP) -c Source/source/ChunkFeatureExtractor.cpp -o Obj/ChunkFeatureExtractor.o $(CXXFLAGS)
+
+Obj/ChunkMaskGenerator.o: Source/source/ChunkMaskGenerator.cpp
+	$(CPP) -c Source/source/ChunkMaskGenerator.cpp -o Obj/ChunkMaskGenerator.o $(CXXFLAGS)
+
+Obj/ChunkEvaluator.o: Source/source/ChunkEvaluator.cpp
+	$(CPP) -c Source/source/ChunkEvaluator.cpp -o Obj/ChunkEvaluator.o $(CXXFLAGS)
+
+Obj/StrategicGrids.o: Source/source/StrategicGrids.cpp
+	$(CPP) -c Source/source/StrategicGrids.cpp -o Obj/StrategicGrids.o $(CXXFLAGS)
+
+Obj/build_chunks.o: Source/source/build_chunks.cpp
+	$(CPP) -c Source/source/build_chunks.cpp -o Obj/build_chunks.o $(CXXFLAGS)
+>>>>>>> b8d902617d8c303d49069cf9cd3287a41f899c3e
